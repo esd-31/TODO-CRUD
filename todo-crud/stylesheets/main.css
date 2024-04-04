@@ -1,0 +1,99 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.todo-container {
+    width: 800px;
+    height: 75vh;
+    background-color: #dddd;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    filter: drop-shadow(8px 8px 10px #000);
+    padding: 15px;
+}
+.todo-form-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+:where(.todo-form-controls) > input[type="text"] {
+    padding: 20px;
+    border: none;
+    width: 450px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+:where(.todo-btn) > input[type="submit"] {
+    padding: 20px;
+    border: none; 
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    border-left: solid 2px #000;
+}
+:where(.todo-btn) > input[type="button"] {
+    padding: 20px;
+    border: none; 
+    cursor: pointer;
+    background-color: green;
+    border-radius: 6px;
+    color: #fff;
+}
+.todo-form-controls {
+    margin-top: 5%;
+}
+.table-data-container {
+    position: absolute;
+    z-index: 2;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: none;
+}
+.todo-form-edit {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: none; 
+    width: 700px;
+    height: 40vh;
+    background-color: #dddd;
+    padding: 20px;
+    border-radius: 15px;
+}
+.todo-form-edit-controll {
+    margin-top: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-form-edit-controll > input[type="submit"] {
+    border: none;
+    padding: 10px;
+    width: 100px;
+    cursor: pointer;
+    background-color: dodgerblue;
+    color: #fff;
+}
+.todo-form-edit-controll > input[type="text"] {
+    border: none;
+    padding: 10px;
+    width: 300px;
+}
+.todo-form-title > button {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    font-weight: bolder;
+    border: solid 2px #000;
+}
